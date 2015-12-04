@@ -1,0 +1,11 @@
+http://have1824.blog.me/220448790697
+- fflush 비쥬얼 스튜디오 2015에서 기능 오류
+
+fflush는 원래 출력버퍼를 대상으로 하는 함수란다.. fflush(stdout)
+fflush(stdin)은 입력버퍼를 비워주기보다는 소멸시킨다. 표준이 아님
+
+정 비울경우
+
+while(getchar()!='\n')
+
+setbuf(stdin,NULL)
